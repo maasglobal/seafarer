@@ -1,4 +1,4 @@
-# seafarer
+# seafarer ⛵
 
 Taxicab metric on the sphere! Install via
 
@@ -41,3 +41,19 @@ from haversine import Unit
 seafarer_metric(schwerin, helsinki, unit=Unit.NAUTICAL_MILES)
 # 796.2958366185961 nautical miles
 ```
+
+## What is this? Why Seafarer?
+
+On a 2-dimensional plane, the metric obtained when travelling along the axes
+is known as [taxicab](https://en.wikipedia.org/wiki/Taxicab_geometry),
+Manhattan, or L1 metric. What is the equivalent on a 3-dimensional sphere?
+
+We calculate the distance when travelling along the grid of longitudinal and
+latitudinal lines. When travelling from Schwerin (53°N 11°E) to Helsinki
+(60°N 24°E) in the example above, there are two possiblities: travel via
+53°N 24°E or 60°N 11°E. Unlike the 2D case, these two distances are
+(generally) different, so we use the short one.
+
+Before navigation improved to a sufficient degree, this is how ships were
+sailing: parallel to the equator until they hit the target meridian, then
+North or South to their final destination. Hence seafarer metric! ⛵
