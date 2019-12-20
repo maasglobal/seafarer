@@ -12,7 +12,7 @@ def seafarer_metric(
     point2: Sequence[float],
     unit: Union[Unit, str] = Unit.KILOMETERS,
 ) -> float:
-    """ calculate an L1-metric equivalent on the sphere """
+    """Calculate an L1-metric equivalent on the sphere."""
 
     unit = Unit(unit)
 
