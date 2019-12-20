@@ -7,8 +7,8 @@ pip install seafarer
 ```
 
 This library calculates the "seafarer distance" between two points on Earth:
-Travel parallel to latitude and longitude instead of "as the crow flies",
-as in the old days...
+Travel parallel to latitude and longitude instead of "as the crow flies" –
+like in the old days...
 
 ## Usage
 
