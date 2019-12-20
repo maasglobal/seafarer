@@ -1,4 +1,4 @@
-# seafarer ⛵
+# Seafarer ⛵
 
 Taxicab metric on the sphere! Install via
 
