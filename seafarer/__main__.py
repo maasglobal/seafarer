@@ -61,7 +61,7 @@ def main():
         point1=(args.lat1, args.lng1), point2=(args.lat2, args.lng2), unit=unit
     )
 
-    print(f"{distance:g}{unit.value}")
+    print(f"{distance:g} {unit.value}")
 
 
 if __name__ == "__main__":

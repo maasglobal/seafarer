@@ -2,15 +2,19 @@
 
 """Calculate distances."""
 
-from typing import Sequence
+from typing import Sequence, Union
 
 from haversine import Unit, haversine
 
 
 def seafarer_metric(
-    point1: Sequence[float], point2: Sequence[float], unit: Unit = Unit.KILOMETERS
+    point1: Sequence[float],
+    point2: Sequence[float],
+    unit: Union[Unit, str] = Unit.KILOMETERS,
 ) -> float:
     """ calculate an L1-metric equivalent on the sphere """
+
+    unit = Unit(unit)
 
     assert len(point1) == 2
     assert len(point2) == 2
